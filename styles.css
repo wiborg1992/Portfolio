@@ -945,4 +945,8 @@ footer {
   .hire-me {
     margin-right: -5%;
   }
+   .hire-text {
+    display: none !important;
+  }
+}
 }
