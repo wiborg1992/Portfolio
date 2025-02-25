@@ -645,6 +645,11 @@ footer {
 .mobile-menu {
   display: none;
 }
+@media (max-width: 1024px) {
+  .logo-wrap {
+    margin-left: 0; /* Fjern den negative margin på mindre skærme */
+  }
+
 
 /* Desktop (1001px og op) */
 
