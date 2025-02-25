@@ -940,3 +940,9 @@ footer {
     }
   }
 }
+
+@media (min-width: 300px) and (max-width: 468px) {
+  .hire-me {
+    margin-right: -5%;
+  }
+}
