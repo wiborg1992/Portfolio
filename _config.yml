@@ -1,0 +1,10 @@
+# GitHub Pages configuration
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+
