@@ -1,0 +1,610 @@
+/* Projects Page Color Scheme - Matching the attached image */
+.projects-page {
+  --bg: #fff7f7; /* Light pink/off-white background */
+  --line: #7e66c7; /* Light purple-blue for accents */
+  --fill: #fcc5d3; /* Soft pink for accents, dots, underlines */
+  --text: #021963; /* Dark blue/navy for primary text and headings */
+  --subtext: #f67796; /* Soft pink for secondary text */
+  --duo: #fcc5d3; /* Soft pink for duo elements */
+}
+
+/* Override root variables for projects page */
+.projects-page {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Update body background */
+.projects-page {
+  background-color: var(--bg);
+}
+
+/* Update text colors */
+.projects-page .article-heading__title,
+.projects-page .t-heading,
+.projects-page h1,
+.projects-page h2,
+.projects-page h3 {
+  color: var(--text);
+}
+
+.projects-page .page-header__lede,
+.projects-page .flow p,
+.projects-page p {
+  font-size: 19.2px;
+  font-family: "Arial", sans-serif;
+  color: var(--text);
+}
+
+/* Update accent colors - dots and underlines */
+.projects-page .dot {
+  color: var(--fill);
+  background-color: var(--fill);
+}
+
+.projects-page .article-heading__title .dot,
+.projects-page .punktum {
+  color: var(--fill);
+}
+
+/* Update link and button colors */
+.projects-page .btn,
+.projects-page .btn__label {
+  color: var(--text);
+}
+
+.projects-page .btn__fill {
+  background-color: var(--fill);
+}
+
+/* Update navigation colors */
+.projects-page .mainnav,
+.projects-page .menu-overlay {
+  color: var(--text);
+}
+
+/* Update scroll indicator */
+.projects-page .page-header__scroll {
+  color: #919795; /* Light gray for secondary UI elements */
+}
+
+/* Update menu text colors */
+.projects-page .menu-button,
+.projects-page .close-button {
+  color: #919795; /* Light gray */
+}
+
+.projects-page .menu-text,
+.projects-page .menu-description {
+  color: var(--text); /* Dark blue to match the image */
+}
+
+/* Update divider colors */
+.projects-page .menu-divider {
+  background-color: #919795; /* Light gray */
+}
+
+/* Update footer colors */
+.projects-page footer {
+  color: #919795; /* Light gray */
+}
+
+.projects-page footer a {
+  color: #919795; /* Light gray */
+}
+
+/* Logo styling for SVG icon */
+.projects-page .logo-wrap .logo {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.projects-page .menu-overlay.active .logo-wrap .logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Update circle and illustration backgrounds */
+.projects-page .circle__bg.stripes {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%23FCC5D3' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%23FCC5D3' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E");
+  background-size: 11px;
+  opacity: 0.6;
+}
+
+.projects-page .hero__bg.dots {
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 22.9 22.9' style='enable-background:new 0 0 22.9 22.9;' xml:space='preserve'%3E%3Ccircle fill='%23FCC5D3' class='st0' cx='5.7' cy='5.9' r='3'/%3E%3Ccircle fill='%23FCC5D3' class='st0' cx='17.2' cy='17.2' r='3'/%3E%3C/svg%3E%0A");
+  background-size: 12px;
+}
+
+/* Update underline color for headings */
+.projects-page .article-heading__title::before,
+.projects-page .underline {
+  background-color: var(--fill);
+}
+
+/* Custom underline for "About" - short pink line directly under the word */
+.projects-page .hero-text h1 .underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent; /* No background/marking */
+}
+
+.projects-page .hero-text h1 .underline::after {
+  content: '';
+  position: absolute;
+  bottom: -12px; /* More space between text and underline */
+  left: 0;
+  width: 55%;
+  height: 4px;
+  background-color: #F67796; /* Color from attached image */
+  display: block;
+}
+
+/* Update strong/bold text */
+.projects-page b,
+.projects-page strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* Update all text elements to use correct colors */
+.projects-page .t-primary,
+.projects-page .t-heading,
+.projects-page .t-lede,
+.projects-page .t-body,
+.projects-page .t-medium,
+.projects-page .t-bigger,
+.projects-page .t-biggest {
+  color: var(--text);
+}
+
+/* Update links */
+.projects-page a {
+  color: var(--text);
+}
+
+.projects-page a:hover {
+  color: var(--line);
+}
+
+/* Update abbr elements */
+.projects-page abbr {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--subtext);
+}
+
+/* Ensure background is applied to body and html */
+html.projects-page,
+body.projects-page {
+  background-color: var(--bg);
+}
+
+/* Update section backgrounds */
+.projects-page .section {
+  background-color: var(--bg);
+}
+
+.projects-page main {
+  background-color: var(--bg);
+}
+
+/* Update hire-me button colors */
+.projects-page .hire-me {
+  color: var(--text);
+}
+
+.projects-page .hire-me .bubble-icon path {
+  fill: var(--fill);
+  stroke: var(--line);
+}
+
+/* Ensure page header content styling */
+.projects-page .page-header__content {
+  color: var(--text);
+}
+
+/* Update panel styling */
+.projects-page .panels {
+  color: var(--text);
+}
+
+/* Update hero section */
+.projects-page .hero__title {
+  color: var(--text);
+}
+
+.projects-page .hero__content {
+  color: var(--text);
+}
+
+/* Remove blue striped box from hero section */
+.projects-page .hero::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Hero section styling to match about.html structure */
+.projects-page .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.projects-page .hero-text {
+  z-index: 2;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  margin-left: 200px;
+}
+
+.projects-page .hero-text h1 {
+  font-size: 65px;
+  font-family: "Bitter", serif;
+  color: #021963;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.projects-page .hero-text h1 .name-line {
+  white-space: nowrap;
+}
+
+.projects-page .hero-text p {
+  font-size: 19.2px;
+  font-family: "Arial", sans-serif;
+  color: #021963;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 900px;
+  width: auto;
+  text-align: left;
+}
+
+.projects-page .hero-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Scroll container styling to match index.html */
+.projects-page .scroll-container {
+  position: relative;
+  margin-top: 1px;
+  bottom: 15%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-page .scroll-container span {
+  display: inline-block;
+  font-size: 16px;
+  color: #919795; /* Light gray matching projects page */
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projects-page .scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80vh;
+  background-color: var(--text);
+  opacity: 0.45;
+}
+
+/* Panels styling to match the attached image */
+.projects-page .panels {
+  padding: 6rem 0;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.projects-page .panels--centred {
+  text-align: left;
+}
+
+.projects-page .panels__main {
+  max-width: 50rem;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  width: 100%;
+}
+
+.projects-page .panels__side {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 400px;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.projects-page .panel-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SVG styling */
+.projects-page .svg-bg {
+  fill: var(--fill);
+}
+
+.projects-page .svg-fill {
+  fill: var(--fill);
+}
+
+.projects-page .svg-stroke-thin {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Ensure panels__side is visible */
+.projects-page .panels__side {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: auto;
+  min-height: 400px;
+}
+
+/* Flow text styling */
+.projects-page .flow {
+  text-align: left;
+}
+
+.projects-page .flow h2,
+.projects-page .flow .t-heading {
+  font-size: 3.5rem;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.projects-page .flow h2 .dot {
+  color: var(--fill);
+  background-color: transparent;
+}
+
+.projects-page .flow p {
+  font-size: 19.2px;
+  font-family: "Arial", sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.projects-page .flow p:last-child {
+  margin-bottom: 0;
+}
+
+.projects-page .flow > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Hero section with dots pattern on the left */
+.projects-page .reveal.chunk.hero {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.projects-page .hero__content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 200px;
+  position: relative;
+  gap: 4rem;
+}
+
+.projects-page .hero__bg.dots {
+  position: absolute;
+  left: 250px;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 22.9 22.9' style='enable-background:new 0 0 22.9 22.9;' xml:space='preserve'%3E%3Ccircle fill='%23fcc5d3' class='st0' cx='5.7' cy='5.9' r='3'/%3E%3Ccircle fill='%23fcc5d3' class='st0' cx='17.2' cy='17.2' r='3'/%3E%3C/svg%3E%0A");
+  background-size: 12px;
+  background-repeat: repeat;
+  opacity: 0.6;
+  z-index: 0;
+  clip-path: none;
+  pointer-events: none;
+}
+
+.projects-page .hero__text-content {
+  flex: 1;
+  max-width: 50rem;
+  margin-left: 0;
+  position: relative;
+  z-index: 2;
+  padding-left: 200px;
+}
+
+.projects-page .hero__title {
+  font-size: 3.5rem;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.projects-page .hero__title .dot {
+  color: var(--fill);
+  background-color: transparent;
+}
+
+.projects-page .reveal.chunk.hero .flow {
+  text-align: left;
+}
+
+.projects-page .reveal.chunk.hero .flow p {
+  font-size: 19.2px;
+  font-family: "Arial", sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.projects-page .reveal.chunk.hero .flow p:last-child {
+  margin-bottom: 2rem;
+}
+
+/* Button styling to match other buttons */
+.projects-page .btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  border: 2px solid var(--line);
+  background: repeating-linear-gradient(
+    45deg,
+    var(--fill),
+    var(--fill),
+    2px,
+    var(--bg) 2px,
+    var(--bg) 5px
+  );
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 200px;
+}
+
+.projects-page .btn__label {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.projects-page .btn__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--fill);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.projects-page .btn__fill.stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--fill),
+    var(--fill),
+    2px,
+    var(--bg) 2px,
+    var(--bg) 5px
+  );
+}
+
+.projects-page .btn:hover .btn__fill {
+  transform: translateY(0);
+}
+
+.projects-page .btn:hover {
+  color: var(--text);
+}
+
+/* Responsive styling for panels */
+@media (max-width: 768px) {
+  .projects-page .panels {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 2rem;
+  }
+
+  .projects-page .panels__main,
+  .projects-page .panels__side {
+    max-width: 100%;
+  }
+
+  .projects-page .flow h2,
+  .projects-page .flow .t-heading {
+    font-size: 2.5rem;
+  }
+
+  .projects-page .flow p {
+    font-size: 19.2px;
+    font-family: "Arial", sans-serif;
+  }
+
+  .projects-page .hero__content-wrapper {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  .projects-page .hero__bg.dots {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2rem;
+  }
+
+  .projects-page .hero__text-content {
+    margin-left: 0;
+  }
+
+  .projects-page .hero__title {
+    font-size: 2.5rem;
+  }
+}

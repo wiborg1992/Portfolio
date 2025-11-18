@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About me</title>
+    <meta
+      name="description"
+      content="Welcome to my portfolio! I am an independent creative developer. Explore my work and projects."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script>
+      document.querySelector("html").classList.add("js");
+      document.querySelector("html").classList.remove("no-js");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      data-goatcounter="https://1961993.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+  </head>
+  <body class="about-page">
+    <div class="loading" data-page="about">
+      <div class="loading__mask"></div>
+      <div class="loader">
+        <div class="loading-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav class="mainnav">
+        <div class="logo-wrap">
+          <a href="#">
+            <a href="#">
+              <img
+              src="/robbowen.digital/assets/img/About ikon.png"
+              alt="Logo"
+              class="logo"
+            />
+          </a>
+          <div class="menu-divider"></div>
+          <button class="menu-button desktop-menu">MENU</button>
+          <button class="burger-menu mobile-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+        <div class="nav-buttons">
+          <a href="mailto:jwvp92@gmail.com" class="hire-me">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              class="bubble-icon"
+            >
+              <path
+                d="M30.78,9.87c13.52,0,24.46,9.58,24.46,21.41a19.4,19.4,0,0,1-5,12.95h0l2.9,9.82L42.37,50.1h0a27.51,27.51,0,0,1-11.59,2.58,26.84,26.84,0,0,1-14-3.86C10.42,45,6.24,38.52,6.24,31.2,6.24,19.53,17.26,9.87,30.78,9.87Z"
+              ></path>
+            </svg>
+            HIRE ME
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+            <button class="close-menu">
+              <span class="close-line"></span>
+              <span class="close-line"></span>
+            </button>
+          </div>
+
+          <nav class="mobile-menu-nav">
+            <a href="index.html" class="menu-item">
+              <span class="menu-text">HOME</span>
+              <span class="menu-description">Back to the homepage</span>
+            </a>
+            <a href="projects.html" class="menu-item">
+              <span class="menu-text">WORK</span>
+              <span class="menu-description">My approach to problem-solving.</span>
+            </a>
+            <a href="about.html" class="menu-item">
+              <span class="menu-text">ABOUT ME</span>
+              <span class="menu-description">Learn more about me</span>
+            </a>
+            <a href="contact.html" class="menu-item">
+              <span class="menu-text">CONTACT</span>
+              <span class="menu-description">Let's work together</span>
+            </a>
+          </nav>
+
+          <div class="mobile-menu-footer">
+            <div class="social-menu">
+              <a
+                href="https://www.figma.com/@yourusername"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-figma"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yourusername"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:your.email@example.com" class="social-link">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+            <a href="mailto:jwvp92@gmail.com" class="hire-me menu-hire-me">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+                class="bubble-icon"
+              >
+                <path
+                  d="M30.78,9.87c13.52,0,24.46,9.58,24.46,21.41a19.4,19.4,0,0,1-5,12.95h0l2.9,9.82L42.37,50.1h0a27.51,27.51,0,0,1-11.59,2.58,26.84,26.84,0,0,1-14-3.86C10.42,45,6.24,38.52,6.24,31.2,6.24,19.53,17.26,9.87,30.78,9.87Z"
+                ></path>
+              </svg>
+              HIRE ME
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu overlay -->
+    <div class="menu-overlay">
+      <div class="menu-content">
+        <div class="menu-header">
+          <div class="logo-wrap">
+            <a href="#">
+              <a href="#">
+                <img
+                  src="/robbowen.digital/assets/img/About ikon.png"
+                  alt="Logo"
+                  class="logo"
+                />
+              </a>
+            </a>
+            <div class="menu-divider-about"></div>
+            <button class="close-button">CLOSE</button>
+          </div>
+
+          <div class="nav-right">
+            <div class="social-menu">
+              <a
+                href="https://www.figma.com/@yourusername"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-figma"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yourusername"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:your.email@example.com" class="social-link">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+            <a href="mailto:jwvp92@gmail.com" class="hire-me menu-hire-me">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+                class="bubble-icon"
+              >
+                <path
+                  d="M30.78,9.87c13.52,0,24.46,9.58,24.46,21.41a19.4,19.4,0,0,1-5,12.95h0l2.9,9.82L42.37,50.1h0a27.51,27.51,0,0,1-11.59,2.58,26.84,26.84,0,0,1-14-3.86C10.42,45,6.24,38.52,6.24,31.2,6.24,19.53,17.26,9.87,30.78,9.87Z"
+                ></path>
+              </svg>
+              HIRE ME
+            </a>
+          </div>
+        </div>
+
+        <nav class="menu-nav">
+          <a href="index.html" class="menu-item">
+            <span class="menu-text">HOME</span>
+            <span class="menu-description">Back to the homepage</span>
+          </a>
+          <a href="projects.html" class="menu-item">
+            <span class="menu-text">WORK</span>
+            <span class="menu-description">My approach to problem-solving.</span>
+          </a>
+          <a href="about.html" class="menu-item">
+            <span class="menu-text">ABOUT ME</span>
+            <span class="menu-description">Learn more about me</span>
+          </a>
+          <a href="contact.html" class="menu-item">
+            <span class="menu-text">CONTACT</span>
+            <span class="menu-description">Let's work together</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              <span class="underline">About</span> me<span
+              class="work-dot"
+              >.</span>
+            </h1>
+            <p class="p-text">
+              I'm a <strong>tech-focused Master's student</strong> with a background in 
+              <strong>law enforcement</strong>, working at the intersection of 
+              <strong>IT</strong>, <strong>AI</strong> and <strong>digital strategy</strong>.
+            </p>
+            
+            
+            
+          </div>
+        </div>
+        <div class="scroll-container">
+          <span>Scroll</span>
+        </div>
+      </section>
+      <!-- About me tekst og billede sektion -->
+      <section class="Letterboxd">
+        <div class="letterboxd-container">
+          <!-- Tekstindhold til venstre -->
+          <div class="letterboxd-text">
+            <p class="p-text">
+              <p class="p-text">
+                Growing up far from the tech world might not be the typical route into IT, but it teaches you to think fast and adapt. 
+                Before moving into technology, I spent several years in a <strong>specialised law enforcement unit</strong>, making high-pressure decisions 
+                long before dashboards and data models became my everyday tools. A lot has changed since then, but the mindset carries over
+                <strong>navigating complexity</strong>, analysing situations quickly, and staying calm when things get messy.
+              </p>
+              <br />
+              
+              <p class="p-text">
+                Today, I’m an IT-focused Master’s student with a deep interest in <strong>AI</strong>, <strong>digital strategy</strong> and <strong>complex systems</strong>. 
+                Over the past years, I’ve worked on projects that translate organisational needs into clear, actionable digital solutions. 
+                Whether it's <strong>structuring chaotic data</strong>, analysing system dependencies, or making technology more intuitive, 
+                I enjoy turning complexity into something teams can actually use.
+              </p>
+              <br />
+              
+              <p class="p-text">
+                These days, I bring together <strong>analytical discipline</strong>, <strong>structured problem-solving</strong> and hands-on execution. 
+                I thrive where <strong>technology, strategy and human needs</strong> meet — breaking problems down, making them understandable, 
+                and helping organisations move forward with solutions that are both smart and practical. 
+                And yes, I still keep a healthy respect for AI that behaves itself.
+              </p>
+              
+            </p>
+          </div>
+          
+          <!-- Billede af kirke til højre -->
+          <div class="letterboxd-img">
+            <img
+              src="Billed af kirke.png"
+              alt="Himmelbjerget illustration"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Skills & Tools sektion -->
+      <section class="skills-tools-section">
+        <div class="dot-header">
+          <div class="dot-header__content_flow">
+            <h2 class="h2-header">Skills <span class="skills-subtitle">and Tools</span><span class="dot">.</span></h2>
+            <p class="p-text skills-intro">
+              <strong>My skillset combines strategic thinking, technical understanding and hands-on execution.</strong><br />
+              I work across digital strategy, AI, data literacy, UX and prototyping — supported by a toolkit that spans analysis, design, automation and modern cloud technologies.<br />
+              These are the core areas I rely on when turning complex challenges into clear, actionable digital solutions.
+            </p>
+          </div>
+        </div>
+        <div class="skills-tools-wrapper">
+          <div class="skills-container">
+            <!-- Skill 1: Digital Strategy -->
+            <div class="skill-card">
+              <div class="skill-number">01</div>
+              <h3 class="skill-title">Digital Strategy</h3>
+              <p class="skill-description">Strategy, systems understanding, digital transformation</p>
+              <div class="skill-percentage">80%</div>
+            </div>
+
+            <!-- Skill 2: AI & Data Literacy -->
+            <div class="skill-card">
+              <div class="skill-number">02</div>
+              <h3 class="skill-title">AI & Data Literacy</h3>
+              <p class="skill-description">AI understanding, analysis, data modeling, agent workflows, systems thinking</p>
+              <div class="skill-percentage">75%</div>
+            </div>
+
+            <!-- Skill 3: UX & Concept Development -->
+            <div class="skill-card">
+              <div class="skill-number">03</div>
+              <h3 class="skill-title">UX & Concept Development</h3>
+              <p class="skill-description">UX design, concept development, user research</p>
+              <div class="skill-percentage">65%</div>
+            </div>
+
+            <!-- Skill 4: Design & Prototyping -->
+            <div class="skill-card">
+              <div class="skill-number">04</div>
+              <h3 class="skill-title">Design & Prototyping</h3>
+              <p class="skill-description">UI, flows, user journeys, Figma, visualization</p>
+              <div class="skill-percentage">70%</div>
+            </div>
+          </div>
+
+          <!-- Tools Section -->
+          <div class="tools-container">
+            <div class="tool-hexagon" data-skill="90" data-color="#FF6B35">
+              <img src="icon full color.svg" alt="Figma" class="tool-icon-img"/>
+              <span class="tool-label">Figma</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="85" data-color="#9bdabe">
+              <img src="icon full color.svg" alt="FigJam" class="tool-icon-img"/>
+              <span class="tool-label">FigJam</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="70" data-color="#FFD23F">
+              <img src="icons8-power-bi-2021.svg" alt="Power BI" class="tool-icon-img"/>
+              <span class="tool-label">Power BI</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="65" data-color="#73cadc">
+              <img src="icons8-azure-48.png" alt="Azure" class="tool-icon-img"/>
+              <span class="tool-label">Azure</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="65" data-color="#73cadc">
+              <img src="icons8-microsoft-copilot-48.png" alt="Copilot Studio" class="tool-icon-img"/>
+              <span class="tool-label">Copilot Studio</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="85" data-color="#5269bd">
+              <img src="icons8-notion-50.png" alt="Notion" class="tool-icon-img"/>
+              <span class="tool-label">Notion</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="80" data-color="#FFD23F">
+              <img src="icons8-miro-64.png" alt="Miro" class="tool-icon-img"/>
+              <span class="tool-label">Miro</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="40" data-color="#FF6B35">
+              <img src="icons8-python-48.png" alt="Python" class="tool-icon-img"/>
+              <span class="tool-label">Python</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="60" data-color="#9bdabe">
+              <img src="icons8-html-5-48.png" alt="HTML/CSS" class="tool-icon-img"/>
+              <span class="tool-label">HTML/CSS</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="90" data-color="#73cadc">
+              <img src="icons8-microsoft-365-48.png" alt="Office 365" class="tool-icon-img"/>
+              <span class="tool-label">Office 365</span>
+            </div>
+
+            <div class="tool-hexagon" data-skill="70" data-color="#5269bd">
+              <img src="icons8-microsoft-power-automate-2020-48.png" alt="Power Automate" class="tool-icon-img"/>
+              <span class="tool-label">Power Automate</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/wiborg1992/Portfolio" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jakob-pedersen-897949292"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.figma.com/proto/5TbjiZ0rDmPWexHPAg1c1z/Portfolio?page-id=0%3A1&node-id=21-449&p=f&viewport=162%2C-159%2C0.31&t=JZsACR1zqBUCwmQU-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=21%3A449"
+            target="_blank"
+            >Figma</a
+          >
+        </li>
+      </ul>
+      <p>&copy; 2024 Jakob W. Pedersen. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

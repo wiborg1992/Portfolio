@@ -1,0 +1,33 @@
+/*  SCROOL  */
+.scroll-container .scroll-text {
+  font-size: 0.8rem; /* Match font-størrelse */
+  color: #919795; /* Farve fra billedet */
+  text-transform: uppercase; /* Gør teksten til store bogstaver */
+  font-family: "Arial", sans-serif; /* Match font */
+  margin-bottom: 10px; /* Afstand til linjen */
+  letter-spacing: 0.3rem;
+}
+
+.scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Placér linjen under teksten */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; /* Linjens bredde */
+  height: 80px; /* Linjens længde */
+  background: #0f1b61; /* Linjens farve */
+  opacity: 0.45; /* Gør linjen lettere gennemsigtig */
+  z-index: 1; /* Sørg for, at linjen ligger bag tekst */
+}
+
+/* Animation til scroll-indikator */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Giver en bounce-effekt */
+  }
+}
