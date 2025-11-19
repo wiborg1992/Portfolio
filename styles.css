@@ -142,6 +142,7 @@ header {
   width: 100px;
   height: 100px;
   background: transparent;
+  object-fit: contain;
 }
 
 .stroke-poly {
@@ -404,6 +405,7 @@ header {
   .logo {
     width: 40px;
     height: 40px;
+    object-fit: contain;
   }
 
   .menu-divider {
@@ -479,6 +481,7 @@ header {
   }
   .logo {
     max-height: 50px;
+    object-fit: contain;
   }
   .menu-divider,
   .menu-link {
@@ -1317,6 +1320,7 @@ footer p {
   }
   .logo {
     max-height: 50px;
+    object-fit: contain;
   }
   .menu-divider,
   .menu-link {
