@@ -523,16 +523,22 @@ function toggleMobileMenu() {
   }
 }
 
-// Event listeners
-burgerMenu.addEventListener("click", toggleMobileMenu);
-closeMenuButton.addEventListener("click", toggleMobileMenu);
+// Event listeners - check if elements exist before adding listeners
+if (burgerMenu) {
+  burgerMenu.addEventListener("click", toggleMobileMenu);
+}
+if (closeMenuButton) {
+  closeMenuButton.addEventListener("click", toggleMobileMenu);
+}
 
 // Close menu when clicking outside
-mobileMenuOverlay.addEventListener("click", (e) => {
-  if (e.target === mobileMenuOverlay) {
-    toggleMobileMenu();
-  }
-});
+if (mobileMenuOverlay) {
+  mobileMenuOverlay.addEventListener("click", (e) => {
+    if (e.target === mobileMenuOverlay) {
+      toggleMobileMenu();
+    }
+  });
+}
 
 // Close menu when pressing escape key
 document.addEventListener("keydown", (e) => {
