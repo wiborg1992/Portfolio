@@ -542,7 +542,7 @@ if (mobileMenuOverlay) {
 
 // Close menu when pressing escape key
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && mobileMenuOverlay.classList.contains("active")) {
+  if (e.key === "Escape" && mobileMenuOverlay && mobileMenuOverlay.classList.contains("active")) {
     toggleMobileMenu();
   }
 });
