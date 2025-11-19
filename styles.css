@@ -140,7 +140,7 @@ header {
 
 .logo {
   width: 100px;
-  height: 100px;
+  height: auto;
   background: transparent;
   object-fit: contain;
 }
@@ -404,7 +404,7 @@ header {
 
   .logo {
     width: 40px;
-    height: 40px;
+    height: auto;
     object-fit: contain;
   }
 
@@ -1873,7 +1873,7 @@ body.lock-scroll {
 
 .menu-overlay.active .logo-wrap .logo {
   width: 120px;
-  height: 120px;
+  height: auto;
   background: transparent !important;
   mix-blend-mode: multiply;
   object-fit: contain;
@@ -1895,7 +1895,7 @@ body.lock-scroll {
 @media (max-width: 768px) {
   .menu-overlay.active .logo-wrap .logo {
     width: 120px;
-    height: 120px;
+    height: auto;
     background: transparent !important;
     mix-blend-mode: multiply;
     object-fit: contain;
