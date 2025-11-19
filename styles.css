@@ -141,6 +141,7 @@ header {
 .logo {
   width: 100px;
   height: 100px;
+  background: transparent;
 }
 
 .stroke-poly {
@@ -1869,6 +1870,9 @@ body.lock-scroll {
 .menu-overlay.active .logo-wrap .logo {
   width: 120px;
   height: 120px;
+  background: transparent !important;
+  mix-blend-mode: multiply;
+  object-fit: contain;
 }
 
 .menu-overlay.active .logo-wrap {
@@ -1888,6 +1892,9 @@ body.lock-scroll {
   .menu-overlay.active .logo-wrap .logo {
     width: 120px;
     height: 120px;
+    background: transparent !important;
+    mix-blend-mode: multiply;
+    object-fit: contain;
   }
 }
 
