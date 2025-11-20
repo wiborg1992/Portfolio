@@ -528,6 +528,12 @@
   top: 2px;
 }
 
+/* Specifik styling for overlay logo på about.html - samme position som header */
+.about-page .menu-overlay.active .logo-wrap {
+  margin-left: 0;
+  padding-left: 20px;
+}
+
 .menu-button {
   background: none;
   border: none;
