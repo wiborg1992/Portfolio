@@ -510,7 +510,7 @@
 /* Specifik styling for about.html - flyt logo og divider til venstre */
 .about-page .mainnav .logo-wrap {
   margin-left: 0;
-  padding-left: 5px;
+  padding-left: 20px;
 }
 
 .menu-divider {
